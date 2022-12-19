@@ -1,6 +1,6 @@
-# Curriculum
+# Página Pessoal
 
-Projeto construído para mostra um pouco das minha habilidades e conhecimentos
+Projeto desenvolvido para mostrar um pouco sobre mim.
 
 [Clique aqui para acessar o projeto](https://aguiarhugo.github.io/Curriculum/)
 
