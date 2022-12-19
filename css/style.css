@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #0e121a;
+}
+
+header {
+    background-color: #0e121a;
+    display: flex;
+    align-items: center;
+    height: 18rem;
+    padding: 1rem;
+    font-size: 2rem;
+    justify-content: center;
+    border-bottom: 2px solid #333;
+
+    animation: fromTop 1s;
+
+}
+
+#logo img {
+    display: block;
+    width: 18rem;
+    margin-bottom: .5rem;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+
+#menu a {
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: .4s;
+
+    font-weight: bold;
+    padding: .5rem;
+}
+
+#menu a:hover {
+    opacity: .7;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+@media (max-width: 1300px) {
+
+    #btn-mobile {
+        display: block;
+    }
+
+    #menu {
+        position: absolute;
+        width: 100%;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+        background: #0e121a;
+        right: 0rem;
+        display: block;
+        height: 0px;
+        z-index: 1000;
+
+        transition: .4s;
+        visibility: hidden;
+        overflow-y: hidden;
+        font-size: 1.5rem;
+    }
+
+    #nav.active #menu {
+        display: block;
+        height: 20rem;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu p {
+        padding-bottom: 3rem;
+        margin-left: 1rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0rem 1rem;
+        text-align: center;
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: #fff;
+        font-size: 2rem;
+
+    }
+
+    #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+        margin-left: 2rem;
+        justify-content: center;
+    }
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
+/*ABOUT ME*/
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+p {
+    text-align: center;
+    margin: 1rem 7rem;
+    font-size: 1.6rem;
+}
+
+.about-me, .exp, .tech, .contact {
+    color: #fff;
+    text-align: center;
+    animation: fromBottom 1s;
+}
+
+/*EXP*/
+
+.exp button {
+    width: 22rem;
+    background-color: #333;
+    border: none;
+    border-radius: .6rem;
+    padding: 1rem;
+    margin: 2rem 1rem;
+    cursor: pointer;
+
+    transition: .5s;
+}
+
+.exp button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.6rem;
+    transition: .5;
+}
+
+.exp button:hover {
+    opacity: .8;
+}
+
+@media (max-width: 1300px) {
+    .exp button {
+        margin-bottom: 1rem;
+    }
+}
+
+/*TECH*/
+.tech i, .contact i {
+    font-size: 5rem;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.tech i:hover, .contact i:hover {
+    opacity: .8;
+}
+
+.fa-html5 {
+    color: #e34c26;
+}
+
+.fa-css3-alt {
+    color: #264de4;
+}
+
+.fa-js {
+    color: #f0db4f;
+}
+
+.fa-node-js {
+    color: #68a063;
+}
+
+.fa-square-git {
+    color: #f34f29;
+}
+
+.fa-square-github {
+    color: #ec40d1;
+}
+
+/*CONTACT*/
+.fa-envelope {
+    color: #fff;
+}
+
+.fa-linkedin {
+    color: #0077b5;
+}
+
+.fa-discord {
+    color: #5865F2;
+}
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
