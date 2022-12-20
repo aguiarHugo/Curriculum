@@ -143,6 +143,15 @@ header {
 }
 
 /*ABOUT ME*/
+
+.about-me img {
+    width: 16rem;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #e25cc0 100%);
+    border-radius: 50%;
+    padding: 4px;
+    text-align: center;
+}
+
 h2 {
     text-align: center;
     font-size: 2rem;
@@ -166,7 +175,7 @@ p {
 .exp button {
     width: 22rem;
     background-color: #333;
-    border: none;
+    border: 2px  solid #9572FC;
     border-radius: .6rem;
     padding: 1rem;
     margin: 2rem 1rem;
