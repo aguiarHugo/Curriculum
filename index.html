@@ -15,8 +15,7 @@
 
 </head>
 <body>
-
-    <header>
+    <header>      
         <a id="logo"><img src="./assets/img/logo.png" alt="Logo Hugo Aguiar Web Developer"></a>
         <nav id="nav">
             <button id="btn-mobile"><span id="hamburger"></span></button>
@@ -29,8 +28,11 @@
             </ul>
         </nav>
     </header> 
-
     <div class="about-me">
+        <div class="toggle">
+            <input id="switch" type="checkbox" name="theme">
+            <label for="switch">Toggle</label>
+        </div>
         <h2></i>Quem sou eu</h2>
         <img src="https://github.com/aguiarHugo.png" alt="Foto de Hugo Aguiar">
         <p>Meu nome é Hugo Aguiar dos Santos, tenho 30 anos e resido na cidade de Teresóplis, RJ.
@@ -67,6 +69,7 @@
         <i class="fa-brands fa-css3-alt"></i>
         <i class="fa-brands fa-js"></i>
         <i class="fa-brands fa-node-js"></i>
+        <i class="fa-brands fa-react"></i>
         <i class="fa-brands fa-square-git"></i>
         <i class="fa-brands fa-square-github"></i>
     </div>
@@ -78,6 +81,7 @@
         <a href="https://discord.gg/zxuyzr56ru" target="_blank"><i class="fa-brands fa-discord"></i></a>
     </div>
 
+    <script src="./js/dark-mode.js"></script>
     <script src="./js/mobile-navbar.js"></script>
 </body>
 </html>
