@@ -23,7 +23,7 @@ body {
 }
 
 header {
-    height: 10rem;
+    height: 13rem;
     padding: 2rem;
     display: flex;
     justify-content: space-between;
@@ -57,7 +57,7 @@ header {
     transition: .4s;
 
     font-weight: bold;
-    padding: .5rem;
+    padding: 2rem;
 }
 
 #menu a:hover {
