@@ -165,7 +165,6 @@ header {
 
     margin: auto;
     
-    display: grid;
     gap: 24px;
     margin-top: 32px;
 }
@@ -186,7 +185,7 @@ h2 {
 
 p {
     text-align: center;
-    margin: 1rem 7rem;
+    margin: 1rem 1rem;
     font-size: 1.6rem;
 }
 
