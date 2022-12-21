@@ -11,15 +11,15 @@ const initialColors = {
     bg: getStyle(html, "--bg"),
     bgPanel: getStyle(html, "--bg-panel"),
     bgBox: getStyle(html, "--bg-box"),
-    colorHeadings: getStyle(html, "--color-headings"),
+    colorToggle: getStyle(html, "--color-toggle"),
     colorText: getStyle(html, "--color-text"),
 }
 
 const lightMode = {
     bg: "#fff",
     bgPanel: "#434343",
-    bgBox: "#fff",
-    colorHeadings: "#43E7AD",
+    bgBox: "rgb(234, 232, 232)",
+    colorToggle: "#43E7AD",
     colorText: "#000"
 }
 

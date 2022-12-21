@@ -8,7 +8,7 @@ html {
     --bg: #0e121a;
     --bg-box: #333;
     --bg-panel: #EBEBEB;
-    --color-headings: #43E7AD;
+    --color-toggle: #43E7AD;
     --color-text: #fff;
 }
 
@@ -213,7 +213,7 @@ p {
 
 .exp button {
     width: 22rem;
-    background-color: #333;
+    background-color: var(--bg-box);
     border: 2px  solid #9572FC;
     border-radius: .6rem;
     padding: 1rem;
@@ -225,14 +225,14 @@ p {
 }
 
 .exp button a {
-    color: #fff;
+    color: var(--color-text);
     text-decoration: none;
     font-size: 1.6rem;
     transition: .5;
 }
 
 .exp button:hover {
-    opacity: .8;
+    opacity: .7;
 }
 
 @media (max-width: 1300px) {
@@ -307,7 +307,7 @@ p {
 }
 
 .fa-envelope {
-    color: var(--color-text);
+    color: #34A853;
 }
 
 .fa-linkedin {
@@ -360,7 +360,7 @@ label::after{
 }
 
 input:checked + label {
-    background-color: var(--color-headings);
+    background-color: var(--color-toggle);
 }
 
 input:checked + label::after {
