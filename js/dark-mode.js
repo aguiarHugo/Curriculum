@@ -10,6 +10,7 @@ const getStyle = (element, style) =>
 const initialColors = {
     bg: getStyle(html, "--bg"),
     bgPanel: getStyle(html, "--bg-panel"),
+    bgBox: getStyle(html, "--bg-box"),
     colorHeadings: getStyle(html, "--color-headings"),
     colorText: getStyle(html, "--color-text"),
 }
@@ -17,6 +18,7 @@ const initialColors = {
 const lightMode = {
     bg: "#fff",
     bgPanel: "#434343",
+    bgBox: "#fff",
     colorHeadings: "#43E7AD",
     colorText: "#000"
 }

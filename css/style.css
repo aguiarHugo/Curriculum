@@ -6,6 +6,7 @@
 
 html {
     --bg: #0e121a;
+    --bg-box: #333;
     --bg-panel: #EBEBEB;
     --color-headings: #43E7AD;
     --color-text: #fff;
@@ -22,12 +23,11 @@ body {
 }
 
 header {
+    height: 10rem;
+    padding: 2rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    height: 18rem;
-    padding: 1rem;
-    font-size: 2rem;
-    justify-content: center;
     background-color: #0e121a;
     border-bottom: 2px solid #333;
 
@@ -35,16 +35,17 @@ header {
 
 }
 
-#logo img {
-    display: block;
-    width: 18rem;
-    margin-bottom: .5rem;
+#logo {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Rock Salt', cursive;
 }
 
 #menu {
     display: flex;
     list-style: none;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 
@@ -52,6 +53,7 @@ header {
     display: block;
     text-decoration: none;
     color: #fff;
+    font-size: 1.8rem;
     transition: .4s;
 
     font-weight: bold;
@@ -152,6 +154,22 @@ header {
 
 /*ABOUT ME*/
 
+.about-me {
+    max-width: 100rem;
+    width: 90%;
+
+    background-color: var(--bg-box);
+    border-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #e25cc0 100%) 30;
+    border-width: 4px;
+    border-style: solid;
+
+    margin: auto;
+    
+    display: grid;
+    gap: 24px;
+    margin-top: 32px;
+}
+
 .about-me img {
     width: 16rem;
     background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #e25cc0 100%);
@@ -180,6 +198,20 @@ p {
 
 /*EXP*/
 
+.exp {
+    max-width: 100rem;
+    width: 90%;
+
+    background-color: var(--bg-box);
+    border-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #e25cc0 100%) 30;
+    border-width: 4px;
+    border-style: solid;
+
+    margin: auto;
+    gap: 24px;
+    margin-top: 32px;
+}
+
 .exp button {
     width: 22rem;
     background-color: #333;
@@ -188,6 +220,7 @@ p {
     padding: 1rem;
     margin: 2rem 1rem;
     cursor: pointer;
+    text-align: center;
 
     transition: .5s;
 }
@@ -210,6 +243,21 @@ p {
 }
 
 /*TECH*/
+
+.tech {
+    max-width: 100rem;
+    width: 90%;
+
+    background-color: var(--bg-box);
+    border-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #e25cc0 100%) 30;
+    border-width: 4px;
+    border-style: solid;
+
+    margin: auto;
+    gap: 24px;
+    margin-top: 32px;
+}
+
 .tech i, .contact i {
     font-size: 5rem;
     margin: 2rem;
@@ -245,6 +293,20 @@ p {
 }
 
 /*CONTACT*/
+.contact {
+    max-width: 100rem;
+    width: 90%;
+
+    background-color: var(--bg-box);
+    border-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #e25cc0 100%) 30;
+    border-width: 4px;
+    border-style: solid;
+
+    margin: auto;
+    gap: 24px;
+    margin-top: 32px;
+}
+
 .fa-envelope {
     color: var(--color-text);
 }
@@ -335,5 +397,4 @@ label:active:after {
         transform: translateY(0)
     }
 }
-
 

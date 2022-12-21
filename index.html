@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br en-us">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,15 +11,13 @@
 
     <script src="https://kit.fontawesome.com/870899c422.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Rock+Salt&display=swap" rel="stylesheet">
 
-</head>
 <body>
-    <header>      
-        <a id="logo"><img src="./assets/img/logo.png" alt="Logo Hugo Aguiar Web Developer"></a>
+    <header>   
+        <a id="logo">Hugo Aguiar</a>
         <nav id="nav">
             <button id="btn-mobile"><span id="hamburger"></span></button>
-                
             <ul id="menu">
                 <li><a>Referências:</a></li>
                 <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a>
@@ -28,11 +26,12 @@
             </ul>
         </nav>
     </header> 
+    <div class="toggle">
+        <input id="switch" type="checkbox" name="theme">
+        <label for="switch">Toggle</label>
+    </div>
     <div class="about-me">
-        <div class="toggle">
-            <input id="switch" type="checkbox" name="theme">
-            <label for="switch">Toggle</label>
-        </div>
+        <section>
         <h2></i>Quem sou eu</h2>
         <img src="https://github.com/aguiarHugo.png" alt="Foto de Hugo Aguiar">
         <p>
@@ -56,6 +55,7 @@
             Muito empolgado em começar uma nova carreira e superar todos os desafios 
             que por ventura eu venha a enfrentar. Tenho muita facilidade em aprender e em trabalhar em equipe.  
         </p>
+    </section>
     </div>
 
     <div class="exp">
