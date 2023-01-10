@@ -224,6 +224,10 @@ p {
     transition: .5s;
 }
 
+.exp button {
+    padding: 1rem;
+}
+
 .exp button a {
     color: var(--color-text);
     text-decoration: none;
@@ -232,7 +236,7 @@ p {
 }
 
 .exp button:hover {
-    opacity: .7;
+    background: #9572FC;
 }
 
 @media (max-width: 1300px) {
@@ -326,9 +330,10 @@ p {
 /*DARK MODE*/
 
 .toggle {
+    display: flex;
     margin: 2rem 2rem;
+    justify-content: center;
 }
-
 
 input[type=checkbox]{
     height: 0;
