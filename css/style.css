@@ -11,12 +11,12 @@
     --bg-panel: #EBEBEB;
     --color-toggle: #43E7AD;
     --color-text: #fff;
+    --img: url(./assets/img/eu-bg-dark.png);
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: var(--bg);
-    
+    background-color: var(--bg);    
 }
 
 header {
@@ -40,7 +40,7 @@ header {
 
     text-shadow: 0 0 0.2em #9572FC, 0 0 0.2em #9572FC,
         0 0 0.2em #9572FC;
-    
+    background-image: var(--img);
 }
 
 #menu {
@@ -222,7 +222,6 @@ p {
     background-color: var(--bg-box);
     border: 2px  solid #9572FC;
     border-radius: .6rem;
-    padding: 1rem;
     margin: 2rem 1rem;
     cursor: pointer;
     text-align: center;
@@ -230,12 +229,10 @@ p {
     transition: .5s;
 }
 
-.exp button {
-    padding: 1rem;
-}
-
 .exp button a {
+    display: block;
     color: var(--color-text);
+    padding: 1rem;
     text-decoration: none;
     font-size: 1.6rem;
     transition: .5;

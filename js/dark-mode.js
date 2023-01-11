@@ -20,7 +20,7 @@ const lightMode = {
     bgPanel: "#434343",
     bgBox: "rgb(234, 232, 232)",
     colorToggle: "#43E7AD",
-    colorText: "#000"
+    colorText: "#000",
 }
 
 const transformKey = key => 
@@ -32,7 +32,6 @@ const changeColors = (colors) => {
         html.style.setProperty(transformKey(key), colors[key]) 
     )
 }
-
 
 checkbox.addEventListener("change", ({target}) => {
     target.checked ? changeColors(lightMode) : changeColors(initialColors)
