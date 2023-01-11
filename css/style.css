@@ -4,16 +4,13 @@
     box-sizing: border-box;
 }
 
-html {
+:root {
+    font-size: 62.5%;
     --bg: #0e121a;
     --bg-box: #333;
     --bg-panel: #EBEBEB;
     --color-toggle: #43E7AD;
     --color-text: #fff;
-}
-
-:root {
-    font-size: 62.5%;
 }
 
 body {
@@ -40,12 +37,14 @@ header {
     font-size: 2.5rem;
     font-weight: bold;
     font-family: 'Rock Salt', cursive;
+    
 }
 
 #menu {
     display: flex;
     list-style: none;
     gap: 1rem;
+
 }
 
 
@@ -66,6 +65,7 @@ header {
 
 #btn-mobile {
     display: none;
+    
 }
 
 @media (max-width: 1300px) {
@@ -128,6 +128,7 @@ header {
         width: 20px;
         margin-left: 2rem;
         justify-content: center;
+
     }
     #hamburger::after,
     #hamburger::before {
@@ -145,10 +146,13 @@ header {
     }
     #nav.active #hamburger::before {
         transform: rotate(135deg);
+        box-shadow: 0px 0px 8px 5px rgba(149, 114, 252, 0.99);
     }
     #nav.active #hamburger::after {
         transform: rotate(-135deg);
         top: -7px;
+        box-shadow: 0px 0px 8px 5px rgba(149, 114, 252, 0.99);
+
     }
 }
 
@@ -160,13 +164,15 @@ header {
 
     background-color: var(--bg-box);
     border-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #e25cc0 100%) 30;
-    border-width: 4px;
+    border-width: 2px;
     border-style: solid;
 
     margin: auto;
     
     gap: 24px;
     margin-top: 32px;
+
+    box-shadow: 0px 0px 8px 5px rgba(149, 114, 252, 0.99);
 }
 
 .about-me img {
@@ -203,12 +209,13 @@ p {
 
     background-color: var(--bg-box);
     border-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #e25cc0 100%) 30;
-    border-width: 4px;
+    border-width: 2px;
     border-style: solid;
 
     margin: auto;
     gap: 24px;
     margin-top: 32px;
+    box-shadow: 0px 0px 8px 5px rgba(149, 114, 252, 0.99);
 }
 
 .exp button {
@@ -253,12 +260,14 @@ p {
 
     background-color: var(--bg-box);
     border-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #e25cc0 100%) 30;
-    border-width: 4px;
+    border-width: 2px;
     border-style: solid;
 
     margin: auto;
     gap: 24px;
     margin-top: 32px;
+
+    box-shadow: 0px 0px 8px 5px rgba(149, 114, 252, 0.99);
 }
 
 .tech i, .contact i {
@@ -302,12 +311,13 @@ p {
 
     background-color: var(--bg-box);
     border-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #e25cc0 100%) 30;
-    border-width: 4px;
+    border-width: 2px;
     border-style: solid;
 
-    margin: auto;
+    margin: 3.2rem auto;
     gap: 24px;
-    margin-top: 32px;
+
+    box-shadow: 0px 0px 8px 5px rgba(149, 114, 252, 0.99);
 }
 
 .fa-envelope {
